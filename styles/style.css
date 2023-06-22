@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(sobre.css);
+@import url(carrosel.css);
+@import url(projeto.css);
+@import url(contato.css);
+@import url(footer.css);
+
+
+:root {
+    --cor-fundo: #141726;
+    --segundo-fundo: rgb(46, 52, 64);
+    --cor-menu: #04294F;
+    --branco: #ffffff;
+    --preto: #000000;
+    --cor-card: #415a77;
+    --amarelo:#ffd60a;
+    --cinza: #94958b ;
+    --font-padrao:'Poppins', sans-serif;
+    --font-logo: 'Press Start 2P', cursive;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo);
+    font-family: var(--font-padrao);
+}
+
+a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+li{
+    list-style: none;
+}
+

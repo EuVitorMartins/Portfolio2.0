@@ -1,0 +1,150 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-menu);
+    height: 9vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    animation: 2s neor infinite ease-out;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-logo);
+}
+
+.img-logo{
+    animation: 2.5s logo infinite alternate-reverse;
+    height: 35px;
+    margin-left: 10px;
+} 
+
+@keyframes logo {
+    0%{
+        transform: translateY(-2.5px);
+    }
+    100%{
+        transform: translateY(2.5px);
+    }
+}
+@keyframes neor {
+    0%{
+        text-shadow: 2px 2px 20px  #0dbc0d;
+    }
+    50%{
+        text-shadow: 2px 2px 20px  #54a854b9;
+    }
+    100%{
+        text-shadow: 2px 2px 20px  #3e693e00;
+    }
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.nav-menu li a {
+    letter-spacing: 1.5px;
+    transition: .5s ease-out ;
+}
+
+.nav-menu li a:hover{
+    border-bottom: 1px solid var(--branco);
+    opacity: 0.5;
+}
+
+/*MENU*/
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    background: transparent;
+    outline: none;
+    width: 40px;
+    height: 4px;
+    border: none;
+    position: absolute;
+    top: 35%;
+    right: 12%;
+}
+
+.mobile-menu .linha{
+    width: 32px;
+    height: 2px;
+    border-top: 2px solid white;
+}
+.mobile-menu .linha::after,
+.mobile-menu .linha::before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    margin-top: 5px;
+    border-top: 2px solid white;
+    transition: 0.3s;
+    position: relative;
+}
+
+.mobile-menu .linha.ativo{
+    border-top-color: transparent;
+}
+
+.mobile-menu .linha.ativo::before{
+    transform: rotate(135deg);
+}
+
+.mobile-menu .linha.ativo::after{
+    transform: rotate(-135deg);
+    top: -8px;
+    right: -1px;
+}
+
+
+
+@media (max-width:950px) {
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-menu{
+        visibility: hidden;
+        overflow-x: hidden;
+        height: 0;
+        position: absolute;
+    }
+    .nav-menu.ativo{
+        visibility: visible;
+        display: flex;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 70vw;
+        height: 92vh;
+        font-size: 1.5em;
+        background: #042a4fae ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: .7s ease-out;
+    }
+
+    .nav-menu li{
+        margin-right: 0;
+    }
+
+    
+}
+
