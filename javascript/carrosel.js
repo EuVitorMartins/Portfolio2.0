@@ -1,19 +1,29 @@
-const config = {
-    type: 'carousel',
-    perView: 4,
-    focusAt: 'center',
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
     breakpoints: {
-        900: {
-            perView: 3
+        450: {
+          slidesPerView: 2,
         },
-        780: {
-            perView: 2
+        640: {
+          slidesPerView: 3,
         },
-        400: {
-            perView: 1,
-        }
+        1024: {
+          slidesPerView: 4,
+        },
     },
-};
-
-
-new Glide('.glide', config).mount()
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

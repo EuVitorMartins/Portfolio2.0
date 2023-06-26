@@ -82,3 +82,8 @@
 .carrosel-texto p{
     margin-top: 10%;
 }
+
+.swiper {
+    width: 90%;
+    height: 300px;
+  }

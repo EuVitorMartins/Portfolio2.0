@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="br-pt">
+
 <head>
     <meta charset="pt-br">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>Portfólio | Vitor Martins</title>
 </head>
 
@@ -32,7 +35,7 @@
                 <p class="sub-texto">Apaixonado e focado na criação de sites interativos, acessíveis e responsivos.</p>
                 <div class="botoes">
                     <a href="http://www.linkedin.com/in/eu-vitor-martins" target="_blank" class="btn-icone">
-                        <img class="btn-img" src="assets/linkedin.png"  alt="rede linkedin">
+                        <img class="btn-img" src="assets/linkedin.png" alt="rede linkedin">
                         <p class="btn-texto">Linkedin</p>
                     </a>
                     <a href="https://github.com/EuVitorMartins" target="_blank" class="btn-icone">
@@ -76,133 +79,133 @@
     </section>
     <section id="habilidades" class="carrosel">
         <h3>Habilidades</h3>
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                                <h2>CSS</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>2</h1>
-                                <h2>CSS</h2>
-                                <p> Nivel: Intermetiario</p>
-                            </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            <h2>CSS</h2>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                <h2>JAVASCRIPT</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>3</h1>
-                                <h2>JAVASCRIPT</h2>
-                                <p> Nivel: Intermetiario</p>
-                            </div>
+                        <div class="carrosel-texto">
+                            <h1>2</h1>
+                            <h2>CSS</h2>
+                            <p> Nivel: Intermetiario</p>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                                <h2>REACT</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>4</h1>
-                                <h2>REACT</h2>
-                                <p> Nivel: Intermetiario</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <h2>JAVASCRIPT</h2>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                                <h2>GITHUB</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>5</h1>
-                                <h2>GITHUB</h2>
-                                <p> Nivel: Básico</p>
-                            </div>
+                        <div class="carrosel-texto">
+                            <h1>3</h1>
+                            <h2>JAVASCRIPT</h2>
+                            <p> Nivel: Intermetiario</p>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-                                <h2>TYPESCRIPT</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>6</h1>
-                                <h2>TYPESCRIPT</h2>
-                                <p> Nivel: Básico</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                            <h2>REACT</h2>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                                <h2>SASS</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>7</h1>
-                                <h2>SASS</h2>
-                                <p> Nivel: Básico</p>
-                            </div>
+                        <div class="carrosel-texto">
+                            <h1>4</h1>
+                            <h2>REACT</h2>
+                            <p> Nivel: Intermetiario</p>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
-                                <h2>NODE.JS</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>8</h1>
-                                <h2>NODE.JS</h2>
-                                <p> Nivel: Iniciante</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                            <h2>GITHUB</h2>
                         </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="card-carrosel">
-                            <div class="carrosel-imagem">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                                <h2>HTML</h2>
-                            </div>
-                            <div class="carrosel-texto">
-                                <h1>1</h1>
-                                <h2>HTML</h2>
-                                <p> Nivel: Intermetiario</p>
-                            </div>
+                        <div class="carrosel-texto">
+                            <h1>5</h1>
+                            <h2>GITHUB</h2>
+                            <p> Nivel: Básico</p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+                            <h2>TYPESCRIPT</h2>
+                        </div>
+                        <div class="carrosel-texto">
+                            <h1>6</h1>
+                            <h2>TYPESCRIPT</h2>
+                            <p> Nivel: Básico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                            <h2>SASS</h2>
+                        </div>
+                        <div class="carrosel-texto">
+                            <h1>7</h1>
+                            <h2>SASS</h2>
+                            <p> Nivel: Básico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
+                            <h2>NODE.JS</h2>
+                        </div>
+                        <div class="carrosel-texto">
+                            <h1>8</h1>
+                            <h2>NODE.JS</h2>
+                            <p> Nivel: Iniciante</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-carrosel">
+                        <div class="carrosel-imagem">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            <h2>HTML</h2>
+                        </div>
+                        <div class="carrosel-texto">
+                            <h1>1</h1>
+                            <h2>HTML</h2>
+                            <p> Nivel: Intermetiario</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
     </section>
-    <section  id="projetos" class="projetos">
-    <h2>Projetos</h2>
-    <ul class="projeto-botoes">
-        <li><button class="btn btn-todos" id="btnFiltrarTodos" value="todos">Todos</button></li>
-        <li><button class="btn btn-css" id="btnFiltrarCSS" value="html">HTML&CSS</button></li>
-        <li><button class="btn btn-javascript" id="btnFiltrarJavascript" value="javascript">JavaScript</button></li>
-        <li><button class="btn btn-react" id="btnFiltrarReact" value="react">React</button></li>
-    </ul>
-    <section class="projetos-cards">
-        <!-- cards -->
-    </section>
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <ul class="projeto-botoes">
+            <li><button class="btn btn-todos" id="btnFiltrarTodos" value="todos">Todos</button></li>
+            <li><button class="btn btn-css" id="btnFiltrarCSS" value="html">HTML&CSS</button></li>
+            <li><button class="btn btn-javascript" id="btnFiltrarJavascript" value="javascript">JavaScript</button></li>
+            <li><button class="btn btn-react" id="btnFiltrarReact" value="react">React</button></li>
+        </ul>
+        <section class="projetos-cards">
+            <!-- cards -->
+        </section>
     </section>
     <section id="contato" class="contato">
         <h2>Entre em contato</h2>
@@ -232,10 +235,10 @@
                     <span></span>
 
                     <label for="mensagem">Mensagem:</label>
-                    <textarea name="message" id="mensagem" required placeholder="Digite sua mensagem" ></textarea>
+                    <textarea name="message" id="mensagem" required placeholder="Digite sua mensagem"></textarea>
                     <span></span>
 
-                    <button> 
+                    <button>
                         <i class="fa-regular fa-paper-plane" style="color: #000000;"></i>Enviar
                     </button>
                 </form>
@@ -256,12 +259,14 @@
             </div>
             <div class="box-texto">
                 <h2><i class="fa-solid fa-plus"></i> Descrição</h2>
-                <p>O projeto foi desenvolvido 100% por mim, a ideá do projeto é apresentar meus conhecimentos. Para o desenvolvimento usei uma metodologia de escala aonde segui um processo de desenvolvimento por partes. O tema do meu portfólio é padrão de cores darks.</p>
+                <p>O projeto foi desenvolvido 100% por mim, a ideá do projeto é apresentar meus conhecimentos. Para o
+                    desenvolvimento usei uma metodologia de escala aonde segui um processo de desenvolvimento por
+                    partes. O tema do meu portfólio é padrão de cores darks.</p>
             </div>
             <div class="box-texto">
                 <h2><i class="fa-solid fa-plus"></i> Referencias</h2>
                 <ul>
-                    <li><a href="https://glidejs.com/docs/setup/">Glide.js</a></li>
+                    <li><a href="https://swiperjs.com/">Swiper.js</a></li>
                     <li><a href="https://www.staticforms.xyz/">Static forms</a></li>
                     <li><a href="https://icons8.com/illustrations">imagens</a></li>
                     <li><a href="https://fontawesome.com/">Icones</a></li>
@@ -273,20 +278,20 @@
             <p>©2023 Vitor Martins</p>
             <ul class="copy-redes">
                 <li><a href="#" class="copy-rede-social">
-                    <i class="fa-brands fa-github"></i>
-                </a></li>
+                        <i class="fa-brands fa-github"></i>
+                    </a></li>
                 <li><a href="#" class="copy-rede-social">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a></li>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a></li>
                 <li><a href="#" class="copy-rede-social">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a></li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a></li>
             </ul>
         </div>
     </footer>
 </body>
 <script src="javascript/menu-mobile.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="javascript/carrosel.js"></script>
 <script src="javascript/projetos.js"></script>
 <script src="javascript/projeto.js"></script>
